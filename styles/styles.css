@@ -1,0 +1,44 @@
+@font-face {
+    font-family:Shabnam;
+    src:url("../fonts/Shabnam.ttf") ;
+    font-weight:normal
+
+}
+
+body {
+    font-family:Shabnam
+}
+
+.navbar  a,.navbar a:visited {
+ text-decoration: none;
+ color:white !important
+
+}
+.navbar {
+    z-index:1
+}
+.shadziLink {
+    width:7rem;
+    text-align:center;
+    color:white;
+    font-size:0.8rem;
+    padding:0.6 2rem;
+    border-radius:25px;
+    background-color:rgb(112,214,195)
+}
+nav  img {
+    height:5vh !important
+}
+.navbar ul {
+    padding:0 20px
+}
+.h5,.h4,.h6 {
+    line-height: 2rem;
+}
+
+.boxText {
+    font-size:0.8rem;
+    line-height: 1.5rem;
+    text-align:justify
+
+}
