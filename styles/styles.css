@@ -91,8 +91,6 @@ input[type=number] {
   padding-top: calc( 9vmin + 40px);
 }
 
-@media (max-width:600px) {
   input[type="number"],input[type="tel"] {
     margin-bottom:20px;
   }
-}

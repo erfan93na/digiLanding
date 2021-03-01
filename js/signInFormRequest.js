@@ -1,7 +1,7 @@
 //After Request >>> This Message Box Shows
 let messageBox = document.createElement("div");
 messageBox.style.color = "white";
-messageBox.style.padding = "2rem";
+messageBox.style.padding = "1rem";
 messageBox.style.marginTop = "1rem";
 messageBox.style.marginBottom = "3rem";
 messageBox.style.borderRadius = "15px";
