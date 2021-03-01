@@ -1,6 +1,17 @@
 @font-face {
   font-family: IRANSansWeb;
-  src: url("../fonts/ttf/IRANSansWeb.ttf");
+  src: url("../fonts/ttf/IRANSansWeb.ttf") format("truetype");
+  src: url("../fonts/eot/IRANSansWeb.eot") format("embedded-opentype");
+  src: url("../fonts/woff/IRANSansWeb.woff")  format("woff");
+  src: url("../fonts/woff2/IRANSansWeb.woff2") format("woff2");
+
+
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: IRANSansFaNum;
+  src: url("../fonts/num/IRANSansFaNum.ttf");
   font-weight: normal;
 }
 
@@ -46,11 +57,15 @@ nav img {
 }
 
 .boxText {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
   text-align: justify;
 }
 
 .main-container {
   margin-top: 60px;
+}
+
+input[type="text"] {
+  font-family: IRANSansFaNum,sans-serif;
 }
