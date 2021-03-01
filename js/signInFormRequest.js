@@ -4,7 +4,7 @@ messageBox.style.color = "white";
 messageBox.style.padding = "1rem";
 messageBox.style.marginTop = "1rem";
 messageBox.style.marginBottom = "3rem";
-messageBox.style.borderRadius = "15px";
+messageBox.style.borderRadius = "0.25rem";
 
 registrationForm.onsubmit = (e) => {
   e.preventDefault();
