@@ -23,7 +23,8 @@
        <div class="container  mt-3">
            <div class="row p-2 p-md-5 py-3 align-items-center shadow-sm mb-3">
                <div class="col-md-6">
-                <div class="boxText">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+                <div class="boxText">سلام دیجیکالایی عزیز خوبی؟ <br>
+                  میدونستی وقتی در طول روز کاری که ساعت ها پشت میز نشستی و فرم بدنت ثابت هستش، ممکنه در آینده باعث به وجود اومدن درد های مفصلی و تغییر در اندامت بشه؟ از همه بدتر هم اینکه کی حوصله داره بعد از تموم شدن روز کاری تو این روزای کرونایی پاشه بره باشگاه</div>
                </div>
                <div class="col-md-6">
                    <img src="./images/largeimg1.png" class="img-fluid"/>
@@ -48,7 +49,8 @@
             </div>
            <div class="row p-2 p-md-5 py-3 mb-3 flex-row-reverse align-items-center shadow-sm">
             <div class="col-md-6">
-                <div class="boxText">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+                <div class="boxText">حالا ما تو شادزی یک امکانی رو فراهم کردیم که در هرکجایی که باشین در هر ساعتی که واستون مناسب هستش فقط با یک اینترنت و موبایل میتونین یک ورزش باحال و پر انرژی رو با یکی از مربی های برتر و متخصص شادزی داشته باشین تا هم خستگی کارتون در بره هم پرانرژی آماده بشین واسه یک روز کاری دیگه
+                </div>
             </div>
             <div class="col-md-6 ">
                 <img src="./images/largeimg2.png" class="img-fluid"/>
@@ -59,7 +61,7 @@
       
             <div class="row p-2 p-md-5 py-3 align-items-center shadow-sm mb-3">
                 <div class="col-md-6">
-                    <div class="boxText">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+                    <div class="boxText">دیجیکالا با همکاری شادزی یک امکانی رو براتون فراهم کرده که از الآن میتونین با ثبت نام در پلتفرم آنلاین شادزی و انتخاب یک مربی از بین مربی های برتر شازدی در ساعت و روز مورد نظر خودتون فقط با رفتن به پلتفرم آنلاین شادزی یک ورزش شاد و جذاب رو تجربه کنین</div>
                 </div>
                 <div class="col-md-6">
                     <img src="./images/largeimg1.png" class="img-fluid"/>
@@ -69,18 +71,18 @@
             </div>
             <div class="row    justify-content-center signinForm" id="signinForm" >
 
-<div class="col-12 col-md-10 col-lg-6 text-center loginForm">
-    <form class="d-flex flex-column gap-3">
+<div class="col-12 col-md-10 col-lg-6 text-center loginForm" id="formContainer">
+    <form class="d-flex flex-column gap-3" id="registrationForm">
         <div class="h4 ">فرم عضویت در سایت</div>
         <div class="form-group ">
           <!-- <label for="formGroupExampleInput">Example label</label> -->
-          <input type="tel" class="form-control  text-center " id="formGroupExampleInput" placeholder="شماره موبایل">
+          <input required type="number" class="form-control  text-center " id="mobileNum" placeholder="شماره موبایل">
         </div>
         <div class="form-group">
           <!-- <label for="formGroupExampleInput2">Another label</label> -->
-          <input type="number" class="form-control   text-center" id="formGroupExampleInput2" placeholder="کد پرسنلی">
+          <input required type="number" class="form-control   text-center" id="personnelNum" placeholder="کد پرسنلی">
         </div>
-        <button type="submit" class="btn btn-success w-100">ثبت نام</button>
+        <button type="submit" class="btn btn-success w-100" id="submitButton">ثبت نام</button>
 
       </form></div>
             </div>
@@ -90,6 +92,8 @@
            </div>
        </div>
    <script src="./bootstrapfiles/bootstrap.bundle.min.js""></script>
+   <script src="./js/axios.min.js"></script>
+   <script src="./js/signInFormRequest.js"></script>
 
   </body>
 </html>
