@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Shabnam;
+  font-family: IRANSansWeb;
   src: url("../fonts/ttf/IRANSansWeb.ttf");
   font-weight: normal;
 }
 
 body {
-  font-family: Shabnam;
+  font-family: IRANSansWeb,sans-serif;
 }
 nav {
   padding: 0 3vw;
