@@ -28,9 +28,10 @@ registrationForm.onsubmit = (e) => {
       }
       formContainer.append(messageBox);
     }).catch(err=>{
+      console.log(err.response)
         //3xx,4xx,5xx Errors
         messageBox.style.backgroundColor = "#ff6562";
-        messageBox.innerText = err.message
+        messageBox.innerText = err.response.data.data.message
         registrationFormHeader.after(messageBox)
     });
 };
