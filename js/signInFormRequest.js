@@ -21,14 +21,9 @@ registrationForm.onsubmit = (e) => {
         messageBox.style.backgroundColor = "#4BB543";
         formContainer.innerHTML = "";
       }
-      else {
-          // Other 2xx Errors
-        messageBox.style.backgroundColor = "#ff6562";
-
-      }
+    
       formContainer.append(messageBox);
     }).catch(err=>{
-      console.log(err.response)
         //3xx,4xx,5xx Errors
         messageBox.style.backgroundColor = "#ff6562";
         messageBox.innerText = err.response.data.data.message
