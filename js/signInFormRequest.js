@@ -2,8 +2,8 @@
 let messageBox = document.createElement("div");
 messageBox.style.color = "white";
 messageBox.style.padding = "1rem";
-messageBox.style.marginTop = "1rem";
-messageBox.style.marginBottom = "3rem";
+messageBox.style.marginTop = "0.7rem";
+messageBox.style.marginBottom = "0.7rem";
 messageBox.style.borderRadius = "0.25rem";
 
 registrationForm.onsubmit = (e) => {
@@ -30,8 +30,7 @@ registrationForm.onsubmit = (e) => {
     }).catch(err=>{
         //3xx,4xx,5xx Errors
         messageBox.style.backgroundColor = "#ff6562";
-        messageBox.innerText = "خطایی رخ داده است";
-        formContainer.append(messageBox);
-
+        messageBox.innerText = err.message
+        registrationFormHeader.after(messageBox)
     });
 };
